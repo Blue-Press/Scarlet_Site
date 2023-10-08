@@ -21,6 +21,8 @@
     </section>
 
 <!-- Slideshow container -->
+<section class="slide-show-container-container">
+
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
@@ -38,7 +40,7 @@
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="images/slide3.png"width:100%">
+      <img src="images/slide3.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
   
@@ -54,22 +56,22 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
+</section>
 
 
     <section id="members">
         <div class="member">
-            <img src="images/whitemane.png" alt="Sally Whitemane">
+            <img src="images/whitemane.png" class="hover-effect" alt="Sally Whitemane">
             <h3>High Inquisitor Sally Whitemane</h3>
             <p>"The Light will guide us!"</p>
         </div>
         <div class="member">
-            <img src="images/mograine.png" alt="Mograine">
+            <img src="images/mograine.png" class="hover-effect" alt="Mograine">
             <h3>Scarlet Commander Mograine</h3>
             <p>"We will not falter!"</p>
         </div>
         <div class="member">
-            <img src="images/fairbanks.png" alt="High Inquisitor Fairbanks">
+            <img src="images/fairbanks.png" class="hover-effect" alt="High Inquisitor Fairbanks">
             <h3>High Inquisitor Fairbanks</h3>
             <p>"rrrrrrrraaaaaaahhhhh!!!!"</p>
         </div>
@@ -78,47 +80,22 @@
     <section id="join">
         <h2>Join Us</h2>
         <p>If you share our dedication to purging the undead and defending Azeroth, become a member of The Scarlet Crusade today! Fill out the form below:</p>
-        <form>
+        <form id="join-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <button type="submit">Join</button>
+            <button type="submit" id="submit-button">Join</button>
         </form>
     </section>
+    
 
     <footer>
         <p>&copy; 2023 The Scarlet Crusade</p>
     </footer>
 
-    <script>
-    let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        // Next/previous controls
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        // Thumbnail image controls
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-        }</script>
 </body>
+
+<script src="carousel.js"></script>
+<script src="scripts.js"></script>
 </html>
