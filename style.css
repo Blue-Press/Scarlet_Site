@@ -29,7 +29,7 @@ body {
 
 header {
   font-family: friz-quadrata-bold;
-    background-color: #d32f2f;
+    background-color: #3f3f3fc4;
     color: #fff;
     text-align: center;
     padding: 30px;
@@ -77,12 +77,13 @@ section {
 }
 
 #about {
-    background-color: #fff;
+    background-color: #3f3f3fc4;
+    color: #fff;
 }
 
 
 .slide-show-container-container {
-    background-color:#717171;
+    background-color:#717171c4;
 }
 
 .slideshow-container {
@@ -176,7 +177,8 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #f7f7f7;
+    background-color: #3f3f3fc4;
+    color: #fff;
 }
 
 .member {
@@ -203,7 +205,8 @@ section {
 }
 
 #join {
-    background-color: #717171;
+    background-color: #717171c4;
+    color: #fff;
 }
 
 #join h2 {
@@ -234,7 +237,8 @@ button:hover {
 }
 
 footer {
-background-color:#bbb;
+background-color: #3f3f3fc4;
+color: #fff;
 width: 80%;
 padding: 30px;
 text-align: center;
